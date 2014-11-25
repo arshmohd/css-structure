@@ -1,0 +1,16 @@
+{
+  "name": "Phoenix JavaScript",
+  "version": "2.0.0",
+  "authors": [
+    "Brad Westfall <brad@azpixels.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

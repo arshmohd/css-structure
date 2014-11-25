@@ -1,0 +1,15 @@
+<div class="event preview next">
+	<header>
+		<a href="{{ post.url | prepend: site.baseurl }}" class="title">{{ post.title }} by {{ post.presenter }}</a>
+		<div class="info">
+			<span>{{ post.location }}</span>
+			<span>{{ post.date | date: "%B %d, %Y" }} {{ post.time }}</span>
+			<span>{{ post.sponsor }}</span>
+		</div>
+	</header>
+	<footer>
+		<a href="http://www.meetup.com/phoenix-javascript" class="button rsvp">RSVP (Meetup.com)</a>
+		<a href="{{ post.url | prepend: site.baseurl }}" class="button">More Info</a>
+		<a href="{{ post.map }}" class="button map">Google Map</a>
+	</footer>
+</div>

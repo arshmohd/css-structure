@@ -1,0 +1,15 @@
+# Site settings
+title: Phoenix JavaScript
+email: brad@azpixels.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://phoenixjavascript.org" # the base hostname & protocol for your site
+twitter_username: phxjavascript
+
+# Build settings
+#markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
+
+# GitHub Flavored Markdown
+#kramdown:
+#  input: GFM

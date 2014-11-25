@@ -1,0 +1,34 @@
+a {
+	text-decoration: none;
+}
+
+a.button {
+	@include button;
+	&:hover {
+		background-color: #FFF;
+	}
+	border: 1px solid #fff;
+	background-color: rgba(255,255,255,0.2);
+}
+
+h1 {
+	font: 20pt $title-font-family;
+	font-weight: 700;
+	margin: 0;
+}
+
+p {
+	line-height: 160%;
+}
+
+p code {
+	background-color: #EEE;
+	border-radius: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 0.8em;
+}
+
+main p {
+	font-size: 16pt;
+}

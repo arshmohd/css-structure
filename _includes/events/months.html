@@ -1,0 +1,6 @@
+<nav class="event-months">
+	<h2>Events</h2>
+	{% for post in site.categories.event %}
+		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %Y" }} ({{ post.topic }})</a>
+	{% endfor %}
+</nav>
