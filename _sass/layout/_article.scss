@@ -1,0 +1,45 @@
+article {
+	@include vertical-gutters($common-gutter);
+	font-size: 14pt;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $title-font-family;
+	}
+
+	> header {
+		border-bottom: 1px solid $line-color;
+		padding-bottom: 10px;
+
+		h1 {
+			font-size: 3em;
+			font-weight: 700;
+			font-family: $title-font-family;
+		}
+	}
+
+	> p {
+		line-height: 180%;
+		text-align: justify;
+	}
+
+	p > code, li > code {
+		background-color: #f5f5f5;
+		border-radius: 4px;
+		padding: 3px;
+	}
+
+	> blockquote {
+		margin: 0;
+		font-style: italic;
+		font-size: 0.8em;
+	}
+
+	> iframe {
+		width: 100%;
+		border: 1px solid #ccc;
+		height: 100px;
+		&.x2 { height: 200px; }
+		&.x3 { height: 300px; }
+	}
+	
+}

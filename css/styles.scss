@@ -1,11 +1,45 @@
 ---
 ---
 
-// App Vars
-@import "vars";
+/**
+ * Utils
+ */
 
-// Base
-@import "base/all";
+// Vars
+@import "utils/vars";
+
+// Mixins
+@import "utils/mixins/layout";
+
+
+/**
+ * Base
+ */
+
+// Reset
+@import "base/normalize";
+
+// Defaults
+@import "base/defaults";
+
+
+/**
+ * Layout
+ */
+
+@import "layout/primary-header";
+@import "layout/main";
+@import "layout/article";
+@import "layout/demo";
+
+
+/**
+ * Components
+ */
+
+@import "syntax-highlighting";
+
+
 
 
 // ***********************************
@@ -13,15 +47,11 @@
 // ***********************************/
 
 // Syntax Highlighting
-@import "syntax-highlighting";
 
-// Defaults
-@import "defaults/general";
+// // Defaults
+// @import "defaults/general";
 
-// Components
-@import "components/general";
+// // Components
+// @import "components/general";
 
-// Structure
-@import "structure/primary-header";
-@import "structure/general";
 

@@ -1,0 +1,81 @@
+header.primary {
+	background: #1076B1 url('/images/bg.jpg');
+
+	> div {
+		position: relative;
+	}
+
+	.logo {
+		font: 20pt $title-font-family;
+		color: #fff;
+		padding: 10px 0;
+		display: inline-block;
+		letter-spacing: 0.1em;
+
+		&::before, &::after {
+		color: rgba(255,255,255,0.5);
+			font-weight: 300;
+		}
+
+		&::before {
+			padding-right: 10px;
+			content: "{";
+		}
+
+		&::after {
+			padding-left: 10px;
+			content: "}";
+		}
+
+	}
+
+	@include respond($desktop-breakpoint) {
+		> div {
+			width: $default-page-width;
+			margin: 0 auto;
+		}
+	}
+
+	.toggle-menu {
+		font-size: 20pt;
+		display: block;
+		float: right;
+		margin-top: 4px;
+		margin-right: 15px;
+		cursor: pointer;
+
+		@include respond($desktop-breakpoint) {	
+			display: none;
+		}
+	}
+
+}
+
+#nav {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: $brand-color;
+
+	a {
+		display: block;
+		padding: 10px 20px;
+		color: #fff;
+	}
+
+	&:target {
+		display: block;
+	}
+
+	// @include respond($desktop-breakpoint) {	
+	// 	display: block;
+	// 	position: static;
+	// 	margin-top: 10px;
+		
+	// 	a {
+	// 		display: inline-block;
+	// 	}
+	// }
+}
+

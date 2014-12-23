@@ -1,0 +1,14 @@
+main {
+	@include vertical-gutters($common-gutter);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	//padding: 1em;
+
+	@include respond($desktop-breakpoint) {
+		width: $default-page-width;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+}

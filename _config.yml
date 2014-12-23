@@ -1,7 +1,7 @@
 # Site settings
 title: CSS Structure
 email: brad@azpixels.com
-baseurl: "/css-structure" # the subpath of your site, e.g. /blog/
+#baseurl: "/css-structure" # the subpath of your site, e.g. /blog/
 url: "http://bradwestfall.github.io/css-structure" # the base hostname & protocol for your site
 #twitter_username: phxjavascript
 
