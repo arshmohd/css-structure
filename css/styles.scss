@@ -6,7 +6,7 @@
  */
 
 // Vars
-@import "utils/vars";
+@import "vars";
 
 // Mixins
 @import "utils/mixins/layout";
@@ -38,20 +38,14 @@
  */
 
 @import "syntax-highlighting";
+@import "components/general";
+@import "components/notice";
+@import "components/css-anatomy";
 
 
 
 
-// ***********************************
-//  Site
-// ***********************************/
 
-// Syntax Highlighting
 
-// // Defaults
-// @import "defaults/general";
-
-// // Components
-// @import "components/general";
 
 

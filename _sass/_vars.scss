@@ -1,18 +1,18 @@
 // Theme
-$brand-color: #04A7EC; //rgb(236, 88, 4);
+$brand-color: #04A7EC;
 $line-color: #eee;
 
 // Reset Vars
 $default-font-family: 'Roboto Slab', Arial;
+$default-font-size: 12pt;
+$default-font-weight: 400;
 $default-text-color: #444;
 $default-anchor-color: $brand-color;
-
-// Title Font
-$title-font-family: $default-font-family;
+$default-anchor-color-visited: #056C97;
 
 // Structure
 $default-page-width: 700px;
-$common-gutter: 0.7em;
+$gutter: 0.7em;
 
 // Common Breakpoints
 $desktop-breakpoint: 1050px;

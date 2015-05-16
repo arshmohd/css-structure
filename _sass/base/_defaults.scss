@@ -1,56 +1,74 @@
+// ****************************************
+//   Inherited Syles
+// ****************************************
+
+// See this explanation for details
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
 html {
-	box-sizing: border-box;
-	height: 100%;
-	font: 12pt $default-font-family;
-	font-weight: 300;
-	color: $default-text-color;
+    box-sizing: border-box;
+    color: $default-text-color;
+    font: $default-font-size $default-font-family;
+    font-weight: $default-font-weight;
 }
 
-* {
-	box-sizing: inherit;
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
 }
+
+
+// ****************************************
+//   Body
+// ****************************************
 
 body {
-	min-height: 100%;
+    background: url('/admin/images/wood.png');
 }
+
+
+// ****************************************
+//   Common tags 
+// ****************************************
 
 a {
-	text-decoration: none;
-	color: $default-anchor-color;
+    color: $default-anchor-color;
+    text-decoration: none;
+    &:visited {
+    	color: $default-anchor-color-visited;
+    }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+	font-weight: 700;
+}
 
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
 
+em { font-style: italic; }
+strong { font-weight: 600; }
 
+p {
+	line-height: 180%;
+	text-align: justify;
+    code {
+        background-color: rgba(220, 218, 209, 0.4);
+        padding: 0 3px;
+        border-radius: 2px;
+    }
+}
 
+li {
+    line-height: 180%;
+}
 
-// a.button {
-// 	@include button;
-// 	&:hover {
-// 		background-color: #FFF;
-// 	}
-// 	border: 1px solid #fff;
-// 	background-color: rgba(255,255,255,0.2);
-// }
-
-// h1 {
-// 	font: 20pt $title-font-family;
-// 	font-weight: 700;
-// 	margin: 0;
-// }
-
-// p {
-// 	line-height: 160%;
-// }
-
-// p code {
-// 	background-color: #EEE;
-// 	border-radius: 2px;
-// 	padding-left: 2px;
-// 	padding-right: 2px;
-// 	font-size: 0.8em;
-// }
-
-// main p {
-// 	font-size: 16pt;
-// }
+blockquote {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-style: italic;
+}

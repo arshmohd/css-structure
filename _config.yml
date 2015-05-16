@@ -10,6 +10,6 @@ url: "http://bradwestfall.github.io/css-structure" # the base hostname & protoco
 markdown: redcarpet
 highlighter: pygments
 
-# GitHub Flavored Markdown
-#kramdown:
+# # GitHub Flavored Markdown
+# kramdown:
 #  input: GFM

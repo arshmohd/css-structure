@@ -1,5 +1,5 @@
 main {
-	@include vertical-gutters($common-gutter);
+	@include vertical-gutters($gutter);
 	margin-top: 1em;
 	margin-bottom: 1em;
 	//padding: 1em;
