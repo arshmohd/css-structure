@@ -16,6 +16,8 @@
     .nf {color: rgb(166, 226, 45) !important; font-weight: normal !important; }
     .nt {color: rgb(249, 39, 114) !important; }
     .k {color: rgb(102, 217, 239) !important; font-weight: normal !important; }
+    .n {color: rgb(102, 217, 239) !important; font-weight: normal !important; }
+    .o {color: rgb(102, 217, 239) !important; font-weight: normal !important; }
     .nb {color: rgb(102, 217, 239) !important; }
     .m {color: rgb(174, 129, 255) !important; }
 
@@ -36,6 +38,7 @@
 // ***********************************/
 
 .demo {
+    overflow: scroll;
 	padding: $gutter;
 	font-family: Arial;
 	border: 1px solid $line-color;

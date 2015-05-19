@@ -2,34 +2,18 @@ article {
 	@include vertical-gutters($gutter);
 	font-size: 14pt;
 
-	// h1, h2, h3, h4, h5, h6 {
-	// 	font-family: $title-font-family;
-	// }
-
-	// > * + h1, h2, h3, h4, h5, h6 {
-	// 	margin-top: 1.5em;
-	// }
-
-	// h2:not(:first-child) {
-	// 	border-top: 1px solid $line-color;
-	// 	padding-top: 0.5em;
-	// }
-
 	> header {
 		border-bottom: 1px solid $line-color;
 		padding-bottom: 10px;
 	}
 
-	img {
+	img.bannar {
 		width: 100%;
 	}
 
 	> iframe {
-		width: 100%;
-		border: 1px solid #ccc;
-		height: 100px;
-		&.x2 { height: 200px; }
-		&.x3 { height: 300px; }
+		margin: $gutter auto;
+		display: block;
 	}
 	
 }

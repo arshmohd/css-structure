@@ -1,9 +1,13 @@
 ---
-layout: master
-
+layout: home
 ---
 
-{% for post in site.posts %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>			
-{% endfor %}
+<div class="list-articles">
+    {% for post in site.posts %}
+    <div class="article-preview level-{{ post.level }}">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {{ post.date | date: "%B %e, %Y" }}
+        {{ post.category }}	
+    </div>
+    {% endfor %}
+</div>

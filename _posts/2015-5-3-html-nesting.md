@@ -7,11 +7,11 @@ categories: [fundamentals, HTML]
 permalink: /html-nesting
 ---
 
-<img src="/images/articles/nesting.jpg" alt="Nesting Dolls">
+<img class="bannar" src="/images/articles/nesting.jpg" alt="Nesting Dolls">
 
 Many decisions we make in Web Development revolve around maintenance. It's one thing to know where your mind was at yesterday when you wrote some HTML, it's another to see your HTML a year later and remembering what you were thinking. For the purposes of maintenance and readability, you'll want to "beautify" your HTML. To accomplish this, you'll want to "nest" and indent your HTML correctly to make it beautify and easy to read.
 
-Let's start off with an example of un-beautiful HTML:
+Let's start off with an example of "un-beautiful" HTML:
 
 ```html
 <header class="primary-header"><a href="#" class="logo">Company Name</a><nav class="primary-nav"><a href="/">Home</a><a href="/about">About</a><a href="/faq">FAQ</a></nav></header>

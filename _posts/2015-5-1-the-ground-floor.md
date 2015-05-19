@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Ground Floor"
+subtitle: "Learning CSS from scratch"
 by: "Brad Westfall"
 level: 1
 categories: [fundamentals, guides]
@@ -13,7 +14,7 @@ permalink: /the-ground-floor/
 
 ## Preface
 
-<img src="/images/articles/wireframe.jpg" alt="">
+<img class="bannar" src="/images/articles/wireframe.jpg" alt="">
 
 Besides making sites look pretty, CSS is also responsible for establishing site layout. In other words, the placement of the main sections on the site is accomplished through CSS Layout. So then what is the difference between CSS Layout and CSS Structure? This website will make a distinction between the two terms:
 
@@ -34,7 +35,7 @@ CSS has a lot of terminology like any area of web development. Before we get int
 
 ## Beginner Articles
 
-On this website, every article makes links to numerous other articles. You can probably get lost in a web of different subjects. This list will keep you on track. Each article in this list builds upon the previous. Just be sure you understand the terminology from above before you dive into these articles:
+On this website, every article makes links to numerous other articles. You can probably get lost in a web of different subjects. This list will keep you on track for learning beginner material in an order that makes sense. Each article in this list builds upon the previous. Remember to review the terminology from above before you dive into these articles:
 
 - [HTML and Whitespace](/html-and-whitespace)
 - [HTML Nesting](/html-nesting)

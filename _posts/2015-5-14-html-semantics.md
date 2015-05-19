@@ -7,7 +7,7 @@ categories: [fundamentals, terminology]
 permalink: /html-semantics
 ---
 
-<img src="/images/articles/web-design-layout.jpg" alt="Web Design and Layout">
+<img class="bannar" src="/images/articles/web-design-layout.jpg" alt="Web Design and Layout">
 
 Semantics is the study of meaning. In HTML, semantics describes the meaning of tags. All tags create a rectangle, sometimes referred to as a [box](/css-box-model). From a behavior standpoint, there is little difference between a `<div>` tag and a `<p>` tag. Sure `<p>` tag starts off with margin but that can be overridden in CSS to make it more div-like. Or we could add margin to the `<div>` tag and essentially make `div`'s and `p`'s look the exact same. We could make anchors look like headings and `h1`'s look like `span`'s because of the power of CSS. So then what difference does it make what tags you chose?
 

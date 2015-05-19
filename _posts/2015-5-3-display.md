@@ -155,6 +155,60 @@ So what will happen if we write the the HTML all on the same line without hard r
 
 Nothing happens, that's the whole point! Remember that the block elements are going to be block elements regardless of the whitespace of the HTML.
 
+
+
+## Padding and Margin with Inline Elements
+
+In more advanced articles we'll start building structure with CSS and we'll need to have a very good working knowledge of `inline` vs `block`. One important fact to remember is how inline elements behave when they have padding or margin applied. The result isn't what you might expect. Let's start with a demonstration:
+
+```html
+<div>Hello <span>David</span>, it's good to see you!</div>
+```
+
+With this HTML, if we give the `span` (an inline element) some padding of 30px, the end result looks like this:
+
+<div class="demo">
+	<div class="colorize">Hello <span style="padding: 30px">David</span>, it's good to see you!</div>
+</div>
+
+<p class="footnote">
+	Note that our `div` element was given a background color to allow us to see what's going on.
+</p>
+
+It would seem that the padding worked on the left and on the right, but it doesn't seem to work on the top and bottom of our span. That is until we give the span a background color as well...
+
+<div class="demo">
+	<div class="colorize">Hello <span style="padding: 30px; background-color: blue">David</span>, it's good to see you!</div>
+</div>
+
+As it turns out, inline elements can have padding and margin, but don't expect their containers (the `div` in this case) to fully contain the inline elements. While this affect might be useful in some cases, CSS developers often avoid applying padding or margin to inline elements. However, just because an element starts off as inline doesn't mean it has to stay that way...
+
+## Changing the display
+
+CSS defaults as only starting points which can be changed. This is true of all defaults not just the `display` property. Imagine if we want anchors but lets say we want them to stack on top of each-other like div's do. You could do this I suppose:
+
+```html
+<div><a href="#">One</a></div>
+<div><a href="#">Two</a></div>
+<div><a href="#">Three</a></div>
+```
+
+But that's unnecessary and uses extra HTML tags. Let's consider this instead:
+
+```html
+<a href="#">One</a>
+<a href="#">Two</a>
+<a href="#">Three</a>
+```
+
+```css 
+a {
+	display: block;
+}
+```
+
+Now we've converted all our anchors to behave just like `div` tags. Obviously we wouldn't want all the anchors on the page to be this way. This just serves as an example to show that `inline` elements can be converted to `block` elements. You can also convert `block` elements to `inline`, however with experience you'll discover that converting `inline` to `block` is helpful and converting `block` to `inline` just isn't needed very often.
+
 ## Summary
 
 While this isn't the end of the block vs inline story, it's a good point to stop for this article. There are many properties that can be applied to an element that might change the default characteristics of block and inline elements. For beginners however, it's imperative to remember how these two `display` values differ in solitude. 

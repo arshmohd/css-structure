@@ -10,9 +10,13 @@ $default-text-color: #444;
 $default-anchor-color: $brand-color;
 $default-anchor-color-visited: #056C97;
 
+// Alternative Text
+$alt-text: 'Nothing You Could Do', cursive;
+
 // Structure
 $default-page-width: 700px;
 $gutter: 0.7em;
 
 // Common Breakpoints
+$desktop-width: 960px;
 $desktop-breakpoint: 1050px;

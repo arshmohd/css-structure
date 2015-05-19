@@ -27,10 +27,10 @@
  * Layout
  */
 
+@import "layout/scafolding";
+@import "layout/hero";
 @import "layout/primary-header";
-@import "layout/main";
 @import "layout/article";
-@import "layout/demo";
 
 
 /**
@@ -38,14 +38,8 @@
  */
 
 @import "syntax-highlighting";
+@import "components/demo";
 @import "components/general";
 @import "components/notice";
 @import "components/css-anatomy";
-
-
-
-
-
-
-
-
+@import "components/article-preview";

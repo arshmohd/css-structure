@@ -1,0 +1,13 @@
+.hero {
+    background: radial-gradient(rgba(0,0,0,0.2), rgba(10, 35, 45, 0.55)), url('/images/hero.jpg');
+    background-size: cover;
+
+    > div {
+        height: 300px;
+        @include respond($desktop-breakpoint) {
+            width: $default-page-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

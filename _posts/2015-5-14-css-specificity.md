@@ -7,4 +7,4 @@ categories: [selectors]
 permalink: /css-specificity
 ---
 
-Page coming soon
+Article in development...

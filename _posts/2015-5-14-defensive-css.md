@@ -7,4 +7,4 @@ categories: []
 permalink: /defensive-css
 ---
 
-Page coming soon
+Article in development...

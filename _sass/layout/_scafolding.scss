@@ -1,0 +1,33 @@
+.page.home {
+    background-color: rgb(239, 243, 244);
+}
+
+
+
+main {
+    @include vertical-gutters($gutter);
+    padding: (2 * $gutter);
+
+    @include respond($desktop-breakpoint) {
+        width: $default-page-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+footer.primary-footer {
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 3 * $gutter;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    color: #aaa;
+
+    > div {
+        @include respond($desktop-breakpoint) {
+            width: $default-page-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
