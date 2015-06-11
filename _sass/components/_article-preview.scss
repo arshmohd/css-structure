@@ -24,7 +24,6 @@ $article-level-3-color: rgba(24, 174, 227, 0.75);
     border-radius: 6px;
 
     position: relative; // For Level Flags Below
-   
 
     &::before {
         box-sizing: border-box;
@@ -33,16 +32,13 @@ $article-level-3-color: rgba(24, 174, 227, 0.75);
         font: 10pt Arial;
         overflow: hidden;
         color: transparent;
-        
         padding: 10px;
         text-align: center;
-
         bottom: 5px;
         right: 5px;
         width: 0px;
         height: 0px;
         border-radius: 50%;
-
         transition: all 0.2s;
         transform: rotate(180deg);
     }
@@ -71,6 +67,5 @@ $article-level-3-color: rgba(24, 174, 227, 0.75);
         content: 'Intermediate';
         background-color: $article-level-3-color;
     }
-
 
 }

@@ -2,7 +2,7 @@
 layout: post
 title: "CSS Specificity"
 by: "Brad Westfall"
-level: 3
+level: 2
 categories: [selectors]
 permalink: /css-specificity
 ---

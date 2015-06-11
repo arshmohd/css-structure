@@ -18,11 +18,11 @@ The difference is the semantic difference. We could make `div` tags look like `p
 
 ## The olden days
 
-Before 2010, the web was largely made up of the HTML 4.01 spec from the [W3C](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium). There were a limited number of "sematic" tags available to us. Most notable were `p` for paragraph, `ul` and `ol` for lists, `b` for bold, `i` for italic, etc...
+Before 2010ish, the web was made up of the HTML 4.01 spec from the [W3C](http://en.wikipedia.org/wiki/World_Wide_Web_Consortium). There were a limited number of "sematic" tags available to us. Most notable were `p` for paragraph, `ul` and `ol` for lists, `b` for bold, `i` for italic, etc...
 
-Some tags were [inline and some were block](/css-display-inline-vs-block/). If one wanted a block-level tag and there were no semantic tags for it, we would use a `div`. If one wanted an inline-level tag and there were no semantic tags for it, we would use `span`. You might say that `div` and `span` were the ["meaningless" or "semantic-less" tags](http://en.wikipedia.org/wiki/Span_and_div).
+Considering that tags are typically [inline or block](/css-display-inline-vs-block/) by default, if one wanted a block-level tag and there were no semantic tags for it, we would use a `div`. And since there weren't a lot semantic tags, `div`'s were used a lot. If one wanted an inline-level tag and there were no semantic tags for it, we would use `span`. There was nothing really wrong with using `div`'s and `span`'s. After all, those tags were specifically designed to be used when [no semantic tag suffices](http://en.wikipedia.org/wiki/Span_and_div). 
 
-The problem was there was a need to make the same things over and over but there wasn't a right tool for the job. Take headers for example:
+The problem was there was a need to make the same things over and over and there was never a specific HTML tag for the job. Take headers for example:
 
 ```html
 <div class="header"></div>
@@ -31,7 +31,7 @@ The problem was there was a need to make the same things over and over but there
 <div class="main-header"></div>
 ```
 
-Every website has one, but since there were no specific semantic tags for this, we used `div` tags and class names to indicate it was our header. While it did lead to some confusion if a developer used really bad class names, there was nothing technically wrong with it. We used funny terms like "div-itis" or "div-soup" to describe websites that were largely made up of the `div` tag.
+Every website has one. But since there were no specific semantic tags for headers, we used `div` tags and class names to indicate it was our header. While it did lead to some confusion if a developer used really bad class names, there was nothing technically wrong with it. We used funny terms like "div-itis" or "div-soup" to describe websites that were largely made up of the `div` tag.
 
 As time progressed, devices and crawlers wanted to become more sophisticated and the abundant use of meaningless `div` tags did start to pose a problem. While a person might be able to tell the semantic difference these two:
 
